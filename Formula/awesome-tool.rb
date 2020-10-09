@@ -7,8 +7,8 @@ class AwesomeTool < Formula
   license "MIT"
 
   def install
-    bin.install "awesome-tool"
-    prefix.install Dir["etc/*"]
+    bin.install "bin/awesome-tool"
+    etc.install Dir["etc/*"]
   end
 end
 
