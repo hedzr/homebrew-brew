@@ -1,5 +1,5 @@
 class AwesomeTool < Formula
-  desc "awesome-tool is a command-line tool to retrieve the stars of all repos in an awesome-list (such as awesome-go."
+  desc "It is a CLI tool to retrieve the stars of all repos in an awesomeness-list"
   homepage "https://github.com/hedzr/awesome-tool"
   url "https://github.com/hedzr/awesome-tool/releases/download/v1.1.1/awesome-tool.gz"
   version "1.1.1"

@@ -1,0 +1,19 @@
+name: livecheck-and-update-tap
+
+on:
+  schedule:
+    # Run every hour
+    - cron:  '0 * * * *'
+
+jobs:
+  update-tap:
+    runs-on: macos-latest
+    steps:
+      - name: Update Homebrew formulae
+        uses: dawidd6/action-homebrew-bump-formula@master
+        with:
+          # Requires personal access token
+          token: "${{ secrets.TAP_GITHUB_TOKEN }}"
+          tap: hedzr/brew
+          force: false
+          livecheck: true
