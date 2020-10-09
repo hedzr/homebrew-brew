@@ -3,7 +3,8 @@ name: livecheck-and-update-tap
 on:
   schedule:
     # Run every hour
-    - cron:  '0 * * * *'
+    #- cron: '0 * * * *'
+    - cron:  '11,41 * * * *'
 
 jobs:
   update-tap:
