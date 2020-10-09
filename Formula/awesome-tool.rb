@@ -8,6 +8,7 @@ class AwesomeTool < Formula
 
   def install
     bin.install "awesome-tool"
+    prefix.install Dir["etc/*"]
   end
 end
 
