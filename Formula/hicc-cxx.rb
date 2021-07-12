@@ -11,8 +11,8 @@ class HiccCxx < Formula
   desc "'hicc' is a c++ template class library to provide some basic data structures and algorithms"
   homepage "https://github.com/hedzr/hicc"
   url "https://github.com/hedzr/hicc.git",
-      tag:      "0.2.1",
-      revision: "asdf"
+      tag:      "v0.2.1",
+      revision: "f6dd073"
   sha256 "asdf"
   version_scheme 1
   head "https://github.com/hedzr/hicc.git"
