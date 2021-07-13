@@ -53,7 +53,7 @@ class CmdrCxx < Formula
       # make a binary installing directly:
       # # system "tar -Jvxf awesome-tool-darwin-0.2.3.tar.zx"
       # bin.install 'awesome-tool' # copy the executable into /usr/local/bin/
-      bin.install 'bin/rel/cmdr_cli'
+      bin.install "#{bin}/cmdr_cli"
     end
   
     test do
