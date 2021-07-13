@@ -5,45 +5,31 @@
 # brew install hedzr/brew/hicc-cxx
 #
 
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
 class HiccCxx < Formula
-  desc "'hicc' is a c++ template class library to provide some basic data structures and algorithms"
+  desc "C++ template class library to provide some basic data structures and algorithms"
   homepage "https://github.com/hedzr/hicc"
   url "https://github.com/hedzr/hicc.git",
       tag:      "v0.2.1",
       revision: "f6dd073fd408e169142a405e273456f1e6a6ce22"
-  sha256 "asdf"
+  # sha256 "asdf-asdf-asdf-asdf-asd-f6dd073fd408e169142a405e273456f1e6a6ce22"
+  license "MIT"
   version_scheme 1
   head "https://github.com/hedzr/hicc.git"
-  license "MIT"
 
-#   bottle do
-#     sha256 cellar: :any_skip_relocation, catalina:    "asdf"
-#     sha256 cellar: :any_skip_relocation, high_sierra: "asdf"
-#     sha256 cellar: :any_skip_relocation, sierra:      "asdf"
-#     sha256 cellar: :any_skip_relocation, el_capitan:  "asdf"
-#   end
+  #   bottle do
+  #     sha256 cellar: :any_skip_relocation, catalina:    "asdf-asdf-asdf-asdf-asd-f6dd073fd408e169142a405e273456f1e6a6ce22"
+  #     sha256 cellar: :any_skip_relocation, high_sierra: "asdf-asdf-asdf-asdf-asd-f6dd073fd408e169142a405e273456f1e6a6ce22"
+  #     sha256 cellar: :any_skip_relocation, sierra:      "asdf-asdf-asdf-asdf-asd-f6dd073fd408e169142a405e273456f1e6a6ce22"
+  #     sha256 cellar: :any_skip_relocation, el_capitan:  "asdf-asdf-asdf-asdf-asd-f6dd073fd408e169142a405e273456f1e6a6ce22"
+  #   end
 
-  depends_on "cmake" => :build
   depends_on "catch2" => [:build, :test]
-  # depends_on "make" => :build
-  # # depends_on "scons" => :run
-  # # depends_on "pkg-config" => :run
-  # # gcc@9
-  # depends_on "clang-format" => :recommended
-  # depends_on "gcc" => :recommended
-  # # depends_on "mingw-w64" => :recommended
-  # # depends_on "wine" => :optional
-  # depends_on "gprof2dot" => :optional
-  # depends_on "graphviz" => :optional
-  # depends_on "valgrind" => :optional
-  # depends_on "yaml-cpp" => :optional
-  depends_on :xcode => "12.0"
-  conflicts_with "cmdr-cxx", because: "cmdr-cxx also ships the most of codes of hicc-cxx."
+  depends_on "cmake" => :build
+  depends_on xcode: "12.0"
+  conflicts_with "cmdr-cxx", because: "cmdr-cxx also ships the most of codes of "
 
   def install
-    ENV.deparallelize # if your formula fails when building in parallel
+    ENV.deparallelize
     # rm "LICENSE"
 
     # system "make", "PREFIX=#{prefix}", "install"
