@@ -12,7 +12,7 @@ Or `brew tap hedzr/brew` and then `brew install <formula>`.
 
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
 
-### build a golang app
+### howto build a golang app
 
 ```ruby
 
@@ -31,6 +31,11 @@ Or `brew tap hedzr/brew` and then `brew install <formula>`.
   end
 
 ```
+
+### other refs
+
+kind: https://github.com/kubernetes-sigs/kind
+
 
 ## Software/Library Lists
 

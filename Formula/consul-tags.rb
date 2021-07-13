@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class ConsulTags < Formula
-  desc "It is a CLI tool to update, add, remove the service tags at consul store"
+  desc "CLI tool to update, add, remove the service tags at consul store"
   homepage "https://github.com/hedzr/consul-tags"
   url "https://github.com/hedzr/consul-tags/releases/download/v0.6.1/consul-tags-v0.6.1-darwin-amd64.tgz"
   version "0.6.1"
