@@ -1,5 +1,7 @@
 # Utilities (via HomeBrew) from Hedzr
 
+[![livecheck-and-update-tap](https://github.com/hedzr/homebrew-brew/actions/workflows/livecheck-tap.yml/badge.svg)](https://github.com/hedzr/homebrew-brew/actions/workflows/livecheck-tap.yml)
+
 ## How do I install these formulae?
 
 `brew install hedzr/brew/<formula>`
