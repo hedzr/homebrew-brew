@@ -40,7 +40,7 @@ class HiccCxx < Formula
     # make a binary installing directly:
     # # system "tar -Jvxf awesome-tool-darwin-0.2.3.tar.zx"
     # bin.install 'awesome-tool' # copy the executable into /usr/local/bin/
-    bin.install "#{bin}/hicc-cli"
+    # bin.install "#{bin}/hicc-cli"
   end
 
   test do
