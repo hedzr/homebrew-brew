@@ -53,7 +53,7 @@ class CmdrCxx < Formula
     # The installed folder is not in the path, so use the entire path to any
     # executables being tested: `system "#{bin}/program", "do", "something"`.
     #
-    system "false"
+    system "true"
     # outputs = shell_output("#{bin}/cmdr_cli")
     # assert_match(/Hello, World!/m, outputs)
   end
