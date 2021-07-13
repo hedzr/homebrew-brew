@@ -26,7 +26,7 @@ class HiccCxx < Formula
   depends_on "catch2" => [:build, :test]
   depends_on "cmake" => :build
   depends_on xcode: "12.0"
-  conflicts_with "cmdr-cxx", because: "cmdr-cxx also ships the most of codes of "
+  conflicts_with "cmdr-cxx", because: "cmdr-cxx also ships most experimental codes similar with hicc-cxx"
 
   def install
     ENV.deparallelize
