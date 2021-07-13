@@ -9,18 +9,18 @@ class HiccCxx < Formula
   desc "C++ template class library to provide some basic data structures and algorithms"
   homepage "https://github.com/hedzr/hicc"
   url "https://github.com/hedzr/hicc.git",
-      tag:      "v0.2.3",
-      revision: "ea1503f19cc0a678ac0cb553124707a1d414d0d5"
-  # sha256 "asdf-asdf-asdf-asdf-asd-ea1503f19cc0a678ac0cb553124707a1d414d0d5"
+      tag:      "v0.2.4",
+      revision: "76cef5fa356fac1120beb9eb674077ef307b022c"
+  # sha256 "asdf-asdf-asdf-asdf-asd-76cef5fa356fac1120beb9eb674077ef307b022c"
   license "MIT"
   version_scheme 1
   head "https://github.com/hedzr/hicc.git"
 
   #   bottle do
-  #     sha256 cellar: :any_skip_relocation, catalina:    "asdf-asdf-asdf-asdf-asd-ea1503f19cc0a678ac0cb553124707a1d414d0d5"
-  #     sha256 cellar: :any_skip_relocation, high_sierra: "asdf-asdf-asdf-asdf-asd-ea1503f19cc0a678ac0cb553124707a1d414d0d5"
-  #     sha256 cellar: :any_skip_relocation, sierra:      "asdf-asdf-asdf-asdf-asd-ea1503f19cc0a678ac0cb553124707a1d414d0d5"
-  #     sha256 cellar: :any_skip_relocation, el_capitan:  "asdf-asdf-asdf-asdf-asd-ea1503f19cc0a678ac0cb553124707a1d414d0d5"
+  #     sha256 cellar: :any_skip_relocation, catalina:    "asdf-asdf-asdf-asdf-asd-76cef5fa356fac1120beb9eb674077ef307b022c"
+  #     sha256 cellar: :any_skip_relocation, high_sierra: "asdf-asdf-asdf-asdf-asd-76cef5fa356fac1120beb9eb674077ef307b022c"
+  #     sha256 cellar: :any_skip_relocation, sierra:      "asdf-asdf-asdf-asdf-asd-76cef5fa356fac1120beb9eb674077ef307b022c"
+  #     sha256 cellar: :any_skip_relocation, el_capitan:  "asdf-asdf-asdf-asdf-asd-76cef5fa356fac1120beb9eb674077ef307b022c"
   #   end
 
   depends_on "catch2" => [:build, :test]
