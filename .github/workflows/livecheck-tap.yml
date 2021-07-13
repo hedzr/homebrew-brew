@@ -4,7 +4,7 @@ on:
   schedule:
     # Run every hour
     #- cron: '0 * * * *'
-    - cron:  '11,41 * * * *'
+    - cron:  '18 * * * *'
 
 jobs:
   update-tap:
