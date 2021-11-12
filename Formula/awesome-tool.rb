@@ -3,7 +3,6 @@
 
 class AwesomeTool < Formula
   desc "Command-line tool to retrieve the stars of all repos in an awesome-list"
-  # desc "It is a CLI tool to retrieve the stars of all repos in an awesomeness-list"
   homepage "https://github.com/hedzr/awesome-tool"
   url "https://github.com/hedzr/awesome-tool/releases/download/v1.1.11/awesome-tool-v1.1.11-darwin-amd64.tgz"
   version "1.1.11"
