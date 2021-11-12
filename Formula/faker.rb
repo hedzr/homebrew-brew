@@ -6,18 +6,10 @@
 #
 
 class Faker < Formula
-  desc "`faker` will generate the faked records.\n"
+  desc "`faker` will generate the faked records"
   homepage "https://github.com/hedzr/go-faker"
-  version "v0.1.33-pre9"
+  version "0.1.33-pre9"
   license "MIT"
-
-  #url "https://github.com/hedzr/go-faker/releases/download/v0.1.33/faker-darwin-amd64.tgz"
-  #sha256 "1e5ffc89559f6da4c414ff40d160553cd815eb0e"
-
-  # def install
-  #   bin.install "bin/faker"
-  #   etc.install Dir["etc/*"]
-  # end
 
   on_macos do
     if Hardware::CPU.arm?
@@ -52,17 +44,18 @@ class Faker < Formula
     end
   end
 
-  #depends_on "git"
-  #depends_on "go"
+  # depends_on "git"
+  # depends_on "go"
 
   def caveats; <<~EOS
     Generate the faked records via interactive console UI by using `faker [commands]`.
     Using 'faker [command] --help' to print the help screen.
-    
+
   EOS
   end
 
   # https://kevin.burke.dev/kevin/install-homebrew-go/
   # https://github.com/create-go-app/homebrew-cli/blob/main/cgapp.rb
   # https://flowerinthenight.com/blog/2019/07/30/homebrew-golang
+
 end
