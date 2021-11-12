@@ -20,13 +20,13 @@ Or `brew tap hedzr/brew` and then `brew install <formula>`.
 #                https://rubydoc.brew.sh/Formula
 
   depends_on "go" => :build
-  
+
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
-  
+
     # ENV["GOPROXY"] = "https://goproxy.io"
     # system "make"
-  
+
     system "go", "build", *std_go_args
   end
 
@@ -38,8 +38,14 @@ kind: <https://github.com/kubernetes-sigs/kind>
 
 ## Software/Library Lists
 
+### golang CLI apps
+
 - [awesome-tool](https://github.com/hedzr/awesome-tool), cli
 - [consul-tags](https://github.com/hedzr/consul-tags), cli
+- [go-faker](https://github.com/hedzr/go-faker), cli
+
+### cxx libraries
+
 - [hicc-cxx](https://github.com/hedzr/hicc), a cxx lib, experimental codes
 - [cmdr-cxx](https://github.com/hedzr/cmdr-cxx), a cxx lib
 
