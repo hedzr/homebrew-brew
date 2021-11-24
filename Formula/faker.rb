@@ -9,7 +9,7 @@ class Faker < Formula
   desc "`faker` will generate the faked records"
   homepage "https://github.com/hedzr/go-faker"
   version "0.2.1"
-  license "MIT"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
