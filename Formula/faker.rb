@@ -34,7 +34,7 @@ class Faker < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/hedzr/go-faker/releases/download/v0.2.3/faker-linux-amd64.gz"
+      url "https://github.com/hedzr/go-faker/releases/download/v0.2.3/faker-linux-amd64.tgz"
       sha256 "216e417bfa7b9a856a5f62e7a826b5e9013bfaf13446baeff064ec8d9b15a05f"
 
       def install
