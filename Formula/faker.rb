@@ -8,12 +8,12 @@
 class Faker < Formula
   desc "`faker` will generate the faked records"
   homepage "https://github.com/hedzr/go-faker"
-  version "0.2.3"
+  version "0.2.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hedzr/go-faker/releases/download/v0.2.3/faker-darwin-arm64.tgz"
+      url "https://github.com/hedzr/go-faker/releases/download/v0.2.4/faker-darwin-arm64.tgz"
       sha256 "a5c0569cb67708cc34f3e657eba66d0f0974bbbaf4fa7dc79ab60a3dff983f90"
 
       def install
@@ -22,8 +22,8 @@ class Faker < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hedzr/go-faker/releases/download/v0.2.3/faker-darwin-amd64.tgz"
-      sha256 "865baf04fc9d8f46a9dfd3c5d5ef344682abc9cfbf206411ec3a1071fa4aafe9"
+      url "https://github.com/hedzr/go-faker/releases/download/v0.2.4/faker-darwin-amd64.tgz"
+      sha256 "c1bfb854f738d5e0a3b5736aafe16d0bec7b768346f7ad066931c40a710d51ca"
 
       def install
         bin.install "bin/faker"
@@ -34,7 +34,7 @@ class Faker < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/hedzr/go-faker/releases/download/v0.2.3/faker-linux-amd64.tgz"
+      url "https://github.com/hedzr/go-faker/releases/download/v0.2.4/faker-linux-amd64.tgz"
       sha256 "216e417bfa7b9a856a5f62e7a826b5e9013bfaf13446baeff064ec8d9b15a05f"
 
       def install
