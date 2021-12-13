@@ -14,7 +14,7 @@ class Faker < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/hedzr/go-faker/releases/download/v0.2.4/faker-darwin-arm64.tgz"
-      sha256 "a5c0569cb67708cc34f3e657eba66d0f0974bbbaf4fa7dc79ab60a3dff983f90"
+      sha256 "e86c064e56cbae7d786fe56982ea81398a32d661eb10685209edebe33a758a55"
 
       def install
         bin.install "bin/faker"
@@ -35,7 +35,7 @@ class Faker < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/hedzr/go-faker/releases/download/v0.2.4/faker-linux-amd64.tgz"
-      sha256 "216e417bfa7b9a856a5f62e7a826b5e9013bfaf13446baeff064ec8d9b15a05f"
+      sha256 "7b3fd195fc54ab9addd7448877dffe10c00d7eab46227100f45a22c9d5ec32a1"
 
       def install
         bin.install "bin/faker"
