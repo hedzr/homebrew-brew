@@ -17,7 +17,7 @@ class Bgo < Formula
       sha256 "8e05a52b884c4c93f7113949cbe562c34045593a2e01213883f63a0ef17fc238"
 
       def install
-        bin.install "bin/bgo"
+        bin.install "./bgo"
         # etc.install Dir["etc/*"]
       end
     end
@@ -26,7 +26,7 @@ class Bgo < Formula
       sha256 "bc1de8ec444e93c1cf200b9721343418c3d9b6605df326835d085a17086ebf4f"
 
       def install
-        bin.install "bin/bgo"
+        bin.install "./bgo"
         # etc.install Dir["etc/*"]
       end
     end
@@ -38,7 +38,7 @@ class Bgo < Formula
       sha256 "b98ae2f0c51b9e16a4e7c3f3c5a2091d07996a35944ac33958dc6649b179be6d"
 
       def install
-        bin.install "bin/bgo"
+        bin.install "./bgo"
         # etc.install Dir["etc/*"]
       end
     end
