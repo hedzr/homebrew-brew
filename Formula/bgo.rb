@@ -18,7 +18,7 @@ class Bgo < Formula
 
       def install
         bin.install "bin/bgo"
-        #etc.install Dir["etc/*"]
+        # etc.install Dir["etc/*"]
       end
     end
     if Hardware::CPU.intel?
@@ -27,7 +27,7 @@ class Bgo < Formula
 
       def install
         bin.install "bin/bgo"
-        #etc.install Dir["etc/*"]
+        # etc.install Dir["etc/*"]
       end
     end
   end
@@ -39,7 +39,7 @@ class Bgo < Formula
 
       def install
         bin.install "bin/bgo"
-        #etc.install Dir["etc/*"]
+        # etc.install Dir["etc/*"]
       end
     end
   end
