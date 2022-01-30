@@ -17,8 +17,14 @@ class Bgo < Formula
       sha256 "8c56f507619f3435fb76bbf9ae8efc7929adab9df6b55d59dda7eb4ea77fc068"
 
       def install
-        bin.install "./bgo"
         # etc.install Dir["etc/*"]
+        system "./bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
+        system "./bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
+        # system "./bgo", "gen", "man", "-d", "man1"
+        zsh_completion.install "./bgo.zsh" => "_bgo"
+        bash_completion.install "./bgo.bash" => "bgo"
+        # man1.install "bgo.1"
+        bin.install "./bgo"
       end
     end
     if Hardware::CPU.intel?
@@ -32,7 +38,7 @@ class Bgo < Formula
         # system "./bgo", "gen", "man", "-d", "man1"
         zsh_completion.install "./bgo.zsh" => "_bgo"
         bash_completion.install "./bgo.bash" => "bgo"
-        #man1.install "bgo.1"
+        # man1.install "bgo.1"
         bin.install "./bgo"
       end
     end
@@ -44,8 +50,14 @@ class Bgo < Formula
       sha256 "8d898d6eda727b79e94619e70b52aa79c128296c1da467fdeec56bd0faa4069c"
 
       def install
-        bin.install "./bgo"
         # etc.install Dir["etc/*"]
+        system "./bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
+        system "./bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
+        # system "./bgo", "gen", "man", "-d", "man1"
+        zsh_completion.install "./bgo.zsh" => "_bgo"
+        bash_completion.install "./bgo.bash" => "bgo"
+        # man1.install "bgo.1"
+        bin.install "./bgo"
       end
     end
   end
