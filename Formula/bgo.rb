@@ -17,7 +17,7 @@ class Bgo < Formula
       sha256 "6d8993ba684c39f4e6aab647adfa97aa7245d7edc8ec147371e267665e1fd183"
 
       def install
-        # etc.install Dir["etc/*"]
+        etc.install Dir["etc/*"]
         system "./bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
         system "./bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
         # system "./bgo", "gen", "man", "-d", "man1"
@@ -32,7 +32,7 @@ class Bgo < Formula
       sha256 "1bdac3f0cf89689dcde77f200014b282ece90211518990861f3aaa6653aa720b"
 
       def install
-        # etc.install Dir["etc/*"]
+        etc.install Dir["etc/*"]
         system "./bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
         system "./bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
         # system "./bgo", "gen", "man", "-d", "man1"
@@ -50,7 +50,7 @@ class Bgo < Formula
       sha256 "ec923b60a26a06105180d4c78ce72d74d5cc4fa0efac7b57c8988c47fb85d040"
 
       def install
-        # etc.install Dir["etc/*"]
+        etc.install Dir["etc/*"]
         system "./bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
         system "./bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
         # system "./bgo", "gen", "man", "-d", "man1"
