@@ -18,13 +18,13 @@ class Bgo < Formula
 
       def install
         etc.install Dir["etc/*"]
-        system "./bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
-        system "./bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
-        # system "./bgo", "gen", "man", "-d", "man1"
+        system "./bin/bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
+        system "./bin/bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
+        # system "./bin/bgo", "gen", "man", "-d", "man1"
         zsh_completion.install "./bgo.zsh" => "_bgo"
         bash_completion.install "./bgo.bash" => "bgo"
         # man1.install "bgo.1"
-        bin.install "./bgo"
+        bin.install "./bin/bgo"
       end
     end
     if Hardware::CPU.intel?
@@ -33,13 +33,13 @@ class Bgo < Formula
 
       def install
         etc.install Dir["etc/*"]
-        system "./bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
-        system "./bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
-        # system "./bgo", "gen", "man", "-d", "man1"
+        system "./bin/bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
+        system "./bin/bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
+        # system "./bin/bgo", "gen", "man", "-d", "man1"
         zsh_completion.install "./bgo.zsh" => "_bgo"
         bash_completion.install "./bgo.bash" => "bgo"
         # man1.install "bgo.1"
-        bin.install "./bgo"
+        bin.install "./bin/bgo"
       end
     end
   end
@@ -51,13 +51,13 @@ class Bgo < Formula
 
       def install
         etc.install Dir["etc/*"]
-        system "./bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
-        system "./bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
-        # system "./bgo", "gen", "man", "-d", "man1"
+        system "./bin/bgo", "gen", "sh", "--bash", "-o", "bgo.bash"
+        system "./bin/bgo", "gen", "sh", "--zsh", "-o", "bgo.zsh"
+        # system "./bin/bgo", "gen", "man", "-d", "man1"
         zsh_completion.install "./bgo.zsh" => "_bgo"
         bash_completion.install "./bgo.bash" => "bgo"
         # man1.install "bgo.1"
-        bin.install "./bgo"
+        bin.install "./bin/bgo"
       end
     end
   end
