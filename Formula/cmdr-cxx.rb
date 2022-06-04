@@ -9,8 +9,8 @@ class CmdrCxx < Formula
   desc "Library provides command-line argument parser and framework, c++ 17 or higher"
   homepage "https://github.com/hedzr/cmdr-cxx"
   url "https://github.com/hedzr/cmdr-cxx.git",
-      tag:      "v0.2.25",
-      revision: "98ca0fdf6fc82a06df81349c4b1064db4d26b1a4"
+      tag:      "v0.2.27",
+      revision: "40c85ca0b939623abd2acea6ca4ae8a84dc37fa0"
   license "MIT"
   version_scheme 1
   head "https://github.com/hedzr/cmdr-cxx.git"
