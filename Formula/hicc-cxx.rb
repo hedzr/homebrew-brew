@@ -23,8 +23,8 @@ class HiccCxx < Formula
   #     sha256 cellar: :any_skip_relocation, el_capitan:  "asdf-asdf-asdf-asdf-asd-918616b4f76388522e6cc5a4f34c67923d410fd6"
   #   end
 
-  depends_on "catch2" => [:build, :test]
-  depends_on "cmake" => :build
+  # depends_on "catch2" => [:build, :test]
+  # depends_on "cmake" => :build
   depends_on xcode: "12.0"
   conflicts_with "cmdr-cxx", because: "cmdr-cxx also ships most experimental codes similar with hicc-cxx"
 
