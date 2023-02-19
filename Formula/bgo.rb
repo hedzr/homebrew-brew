@@ -8,13 +8,13 @@
 class Bgo < Formula
   desc "`bgo` is a super easy way to build your go apps"
   homepage "https://github.com/hedzr/bgo"
-  version "0.5.9"
+  version "0.5.11"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hedzr/bgo/releases/download/v0.5.9/bgo-darwin-arm64.tgz"
-      sha256 "761df77f3d0e3c4bb1d5b34eedc5a6f782ba9be1bca3130e4f4b0dc977fd4484"
+      url "https://github.com/hedzr/bgo/releases/download/v0.5.11/bgo-darwin-arm64.tgz"
+      sha256 "03545bf8869cdfeca4179f175524aad8ade6197606b3830142e20813f84bd3b6"
 
       def install
         etc.install Dir["etc/*"]
@@ -28,8 +28,8 @@ class Bgo < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hedzr/bgo/releases/download/v0.5.9/bgo-darwin-amd64.tgz"
-      sha256 "61a30628abe23b1d64ee69ce902c0c8996abf2387d7a3fe97cf071bdb6562ae0"
+      url "https://github.com/hedzr/bgo/releases/download/v0.5.11/bgo-darwin-amd64.tgz"
+      sha256 "0412b16f16a597bb21b5ad0c83b0735edd3bca6377883416d5f367d7fdda6c70"
 
       def install
         etc.install Dir["etc/*"]
@@ -46,8 +46,8 @@ class Bgo < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/hedzr/bgo/releases/download/v0.5.9/bgo-linux-amd64.tgz"
-      sha256 "523ba33edc99a016fe3bb5ad24ca9d0bd0530a1e4aee2a93138be222e6c1725e"
+      url "https://github.com/hedzr/bgo/releases/download/v0.5.11/bgo-linux-amd64.tgz"
+      sha256 "7b9792d64b171d8535adaefc2f1b003d5a2964d6e435c99877b528f188422582"
 
       def install
         etc.install Dir["etc/*"]
