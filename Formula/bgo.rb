@@ -6,7 +6,7 @@
 #
 
 class Bgo < Formula
-  desc "`bgo` is a super easy way to build your go apps"
+  desc "A dead simple way to go build, run your apps"
   homepage "https://github.com/hedzr/bgo"
   version "0.5.11"
   license "Apache-2.0"
