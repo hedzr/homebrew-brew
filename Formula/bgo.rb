@@ -6,7 +6,7 @@
 #
 
 class Bgo < Formula
-  desc "a dead simple way to go build and go run your apps"
+  desc "Dead simple way to go build and go run your apps"
   homepage "https://github.com/hedzr/bgo"
   version "0.5.11"
   license "Apache-2.0"
