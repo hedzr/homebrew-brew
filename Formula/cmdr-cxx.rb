@@ -6,12 +6,12 @@
 #
 
 class CmdrCxx < Formula
-  desc "Library provides command-line argument parser and framework, c++ 17 or higher"
+  desc "C++17/20 Library to provide command-line argument parser and framework"
   homepage "https://github.com/hedzr/cmdr-cxx"
   url "https://github.com/hedzr/cmdr-cxx.git",
-      tag:      "v0.2.27",
-      revision: "40c85ca0b939623abd2acea6ca4ae8a84dc37fa0"
-  license "MIT"
+      tag:      "v0.5.11",
+      revision: "73ca3525e18220d659c7271732f48753ba921f65"
+  license "Apache 2.0"
   version_scheme 1
   head "https://github.com/hedzr/cmdr-cxx.git"
 
@@ -23,7 +23,7 @@ class CmdrCxx < Formula
   #   end
 
   # depends # _on "catch2" => [:build, :test]
-  # depends # _on "cmake" => :build
+  depends_on "cmake" => :build  # we need newest cmake bundled with homebrew/core
   depends_on xcode: "12.0"
   conflicts_with "hicc-cxx", because: "hicc-cxx also ships most experimental codes similar with cmdr-cxx"
 
