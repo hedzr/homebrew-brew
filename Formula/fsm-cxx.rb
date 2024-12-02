@@ -11,7 +11,7 @@ class FsmCxx < Formula
   url "https://github.com/hedzr/fsm-cxx.git",
       tag:      "v0.2.9",
       revision: "d195d31280ecd3d7d5f1afcee2ca43e65787f67f"
-  license "Apache 2.0"
+  license "Apache-2.0"
   version_scheme 1
   head "https://github.com/hedzr/fsm-cxx.git"
 

@@ -11,7 +11,7 @@ class TickerCxx < Formula
   url "https://github.com/hedzr/ticker-cxx.git",
       tag:      "v0.2.9",
       revision: "cb146f5c3e45f0991815362b3c6288c173f836af"
-  license "Apache 2.0"
+  license "Apache-2.0"
   version_scheme 1
   head "https://github.com/hedzr/ticker-cxx.git"
 

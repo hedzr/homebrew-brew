@@ -12,7 +12,7 @@ class HiccCxx < Formula
       tag:      "v0.2.6",
       revision: "918616b4f76388522e6cc5a4f34c67923d410fd6"
   # sha256 "asdf-asdf-asdf-asdf-asd-918616b4f76388522e6cc5a4f34c67923d410fd6"
-  license "Apache 2.0"
+  license "Apache-2.0"
   version_scheme 1
   head "https://github.com/hedzr/hicc.git"
 

@@ -11,7 +11,7 @@ class UndoCxx < Formula
   url "https://github.com/hedzr/undo-cxx.git",
       tag:      "v0.3.2",
       revision: "90fb1aa7b71bb8742941aa033f3f0b5a28a72886"
-  license "Apache 2.0"
+  license "Apache-2.0"
   version_scheme 1
   head "https://github.com/hedzr/undo-cxx.git"
 

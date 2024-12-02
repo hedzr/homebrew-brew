@@ -11,7 +11,7 @@ class CmdrCxx < Formula
   url "https://github.com/hedzr/cmdr-cxx.git",
       tag:      "v0.5.11",
       revision: "73ca3525e18220d659c7271732f48753ba921f65"
-  license "Apache 2.0"
+  license "Apache-2.0"
   version_scheme 1
   head "https://github.com/hedzr/cmdr-cxx.git"
 
