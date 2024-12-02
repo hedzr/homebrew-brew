@@ -19,16 +19,16 @@ Or `brew tap hedzr/brew` and then `brew install <formula>`.
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://rubydoc.brew.sh/Formula
 
-  depends_on "go" => :build
+depends_on "go" => :build
 
-  def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
+def install
+  # ENV.deparallelize  # if your formula fails when building in parallel
 
-    # ENV["GOPROXY"] = "https://goproxy.io"
-    # system "make"
+  # ENV["GOPROXY"] = "https://goproxy.io"
+  # system "make"
 
-    system "go", "build", *std_go_args
-  end
+  system "go", "build", *std_go_args
+end
 
 ```
 
