@@ -2,18 +2,18 @@
 # frozen_string_literal: true
 
 #
-# brew install hedzr/brew/undo-cxx
+# brew install hedzr/brew/trie-cxx
 #
 
-class UndoCxx < Formula
-  desc "C++17 Library to provide a undo/redo subsystem (linear or restricted non-linear)"
-  homepage "https://github.com/hedzr/undo-cxx"
-  url "https://github.com/hedzr/undo-cxx.git",
-      tag:      "v0.3.2",
-      revision: "90fb1aa7b71bb8742941aa033f3f0b5a28a72886"
+class TrieCxx < Formula
+  desc "C++20 Library to provide trie-tree, store (in-memory key-value store) abilities"
+  homepage "https://github.com/hedzr/trie-cxx"
+  url "https://github.com/hedzr/trie-cxx.git",
+      tag:      "v0.3.1",
+      revision: "5e86bb4550b39768fb88969c6e0488bc7abc9d85"
   license "Apache-2.0"
   version_scheme 1
-  head "https://github.com/hedzr/undo-cxx.git"
+  head "https://github.com/hedzr/trie-cxx.git"
 
   #   bottle do
   #     sha256 cellar: :any_skip_relocation, catalina:    "asdf"

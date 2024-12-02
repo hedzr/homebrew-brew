@@ -23,7 +23,8 @@ class TickerCxx < Formula
   #   end
 
   # depends # _on "catch2" => [:build, :test]
-  depends_on "cmake" => :build  # we need newest cmake bundled with homebrew/core
+  # we need newest cmake bundled with homebrew/core
+  depends_on "cmake" => :build
   depends_on xcode: "12.0"
   # conflicts_with "hicc-cxx", because: "hicc-cxx also ships most experimental codes similar with cmdr-cxx"
 
