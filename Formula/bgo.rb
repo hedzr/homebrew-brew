@@ -8,6 +8,7 @@
 class Bgo < Formula
   desc "Dead simple way to go build and go run your apps"
   homepage "https://github.com/hedzr/bgo"
+  url "https://github.com/hedzr/bgo/releases/download/v0.5.25/bgo-darwin-arm64.tgz"
   version "0.5.25"
   license "Apache-2.0"
 
