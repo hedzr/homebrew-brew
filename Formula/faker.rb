@@ -8,8 +8,8 @@
 class Faker < Formula
   desc "`faker` will generate the faked records"
   homepage "https://github.com/hedzr/go-faker"
-  version "0.2.7"
   url "https://github.com/hedzr/go-faker/releases/download/v0.2.7/faker-darwin-arm64.tgz"
+  version "0.2.7"
   license "Apache-2.0"
 
   on_macos do
