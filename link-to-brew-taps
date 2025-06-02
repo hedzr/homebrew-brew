@@ -1,14 +1,16 @@
 #!/bin/bash
 
-TAPS=/usr/local/Homebrew/Library/Taps
+for TAPS in "$(brew --prefix)/Library/Taps" "$(brew --prefix)/Homebrew/Library/Taps"; do
+    if [ -d $TAPS/hedzr/homebrew-brew ]; then
+        if [ -L $TAPS/hedzr/homebrew-brew ]; then
+            true
+        else
+            rm -rf $TAPS/hedzr/homebrew-brew
+            ln -s "$(pwd)" $TAPS/hedzr/homebrew-brew
+        fi
+    fi
 
-if [ -d $TAPS/hedzr/homebrew-brew ]; then
-  if [ -L $TAPS/hedzr/homebrew-brew ]; then
-    true
-  else
-    rm -rf $TAPS/hedzr/homebrew-brew
-    ln -s "$(pwd)" $TAPS/hedzr/homebrew-brew
-  fi
-fi
+    ls -la $TAPS/hedzr/homebrew-brew
 
-ls -la $TAPS/hedzr/homebrew-brew
+    return
+done
