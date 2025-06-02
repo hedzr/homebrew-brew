@@ -5,7 +5,7 @@
 # brew install hedzr/brew/cmdr-cli
 #
 
-class Bgo < Formula
+class CmdrCli < Formula
   desc "Project and commands code generation tool for Go CLI apps based on hedzr/cmdr"
   
   homepage "https://github.com/hedzr/cmdr-cli"
@@ -79,8 +79,8 @@ class Bgo < Formula
 	    $ cmdr new --output=/tmp/myapp myapp
 	    $ cmdr new cmd --cwd=/tmp/myapp 'server.create.it.here' hr --force
 	    $ cmdr new flg --cwd=/tmp/myapp 'server.create.auto-start' 'bool:false' --force
-	    $ cmdr run --cwd=/tmp/myapp --help
-	    $ cmdr run --cwd=/tmp/myapp ~~tree
+	    $ cmdr run --cwd=/tmp/myapp -- --help
+	    $ cmdr run --cwd=/tmp/myapp -- ~~tree
 		$ cd /tmp/myapp
 		$ go build -o ./bin/ ./...
 		$ ./bin/myapp --help
